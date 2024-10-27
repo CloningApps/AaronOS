@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AaronOS</title>
+    <!-- Zastąpienie lokalnego pliku CSS linkiem do 7.css -->
+    <link rel="stylesheet" href="https://unpkg.com/7.css">
+</head>
+<body>
+    <div class="desktop">
+        <h1>AaronOS</h1>
+        <div class="taskbar">
+            <div class="start-button">Start</div>
+            <div class="taskbar-items">
+                <span id="clock"></span>
+            </div>
+        </div>
+        <div class="window" id="myWindow" style="display:none;">
+            <div class="window-header">
+                <span>Moje Okno</span>
+                <button class="close-button" onclick="closeWindow()">X</button>
+            </div>
+            <div class="window-content">
+                <p>Witaj w AaronOS!</p>
+                <button id="btnClickMe">Kliknij mnie!</button>
+                <p id="message"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
